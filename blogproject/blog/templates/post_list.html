@@ -1,0 +1,11 @@
+<html>
+  <head><title>Post List</title></head>
+  <body>
+    <h1>Latest posts:</h1>
+    <ul>
+      {% for post in post_list %}
+      <li>{{ post.title }}, posted on {{ post.created_on }} {{p.get_states_display}}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
